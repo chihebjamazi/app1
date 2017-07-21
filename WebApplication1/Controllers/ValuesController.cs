@@ -5,26 +5,18 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace WebApplication2.Controllers
+namespace WebApplication1.Controllers
 {
+    
     [Authorize]
     public class ValuesController : ApiController
     {
+        
         // GET api/values
         public IEnumerable<string> Get()
         {
-
             return new string[] { "value1", "value2" };
-
-
-
         }
-
-        public int multiplication(int a, int b)
-        {
-            return a * b;
-        }
-
 
         // GET api/values/5
         public string Get(int id)
